@@ -9,3 +9,9 @@ __DATA__
 Masahiro Nagano
 kazeburo {at} gmail.com
 Plack::App::PHPCGI
+CGI
+PHP
+PSGI
+cgi
+php
+WrapCGI
