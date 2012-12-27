@@ -1,5 +1,5 @@
 <?php
-print("Hello ")
+print("Hello ")l
 print("World\n");
-print($_ENV["SCRIPT_FILENAME"]);
+print($_SERVER["SCRIPT_FILENAME"]);
 ?>
