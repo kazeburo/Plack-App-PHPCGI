@@ -20,14 +20,10 @@ subtest 'php' => sub {
           my $cb  = shift;
           my $req = HTTP::Request->new(GET => "http://localhost/");
           my $res = $cb->($req);
+          like $res->header('Content-Type'), qr!text/html!;
           like $res->content, qr/Hello World/;
           like $res->content, qr!.+/t/01_test\.php!;
       };
-
-
 };
-
-
-
 
 done_testing();
