@@ -6,6 +6,7 @@ use parent qw(Plack::App::File);
 use Plack::Util::Accessor qw(php_cgi);
 use Plack::App::PHPCGI;
 use File::Which;
+use File::Spec;
 use Carp;
 
 sub prepare_app {
