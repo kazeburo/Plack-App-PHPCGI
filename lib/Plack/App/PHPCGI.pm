@@ -12,16 +12,8 @@ use POSIX ":sys_wait_h";
 
 our $VERSION = '0.01';
 
-sub prepare_app {
-    my $self = shift;
-    my $script = $self->script
-        or croak "'script' is not set";
-    $script = File::Spec->rel2abs($script);
-
-    my $php_cgi = $self->php_cgi;
-    $php_cgi ||= which('php-cgi');
-    croak "cannot find 'php-cgi' command" unless -x $php_cgi;
-
+sub wrap_php {
+    my ($php_cgi, $script) = @_;
     my $app = sub {
         my $env = shift;
 
@@ -77,7 +69,20 @@ sub prepare_app {
             Carp::croak("Error at run_on_shell CGI: $!");
         }
     };
-    $self->_app($app);
+    $app;
+}
+
+sub prepare_app {
+    my $self = shift;
+    my $script = $self->script
+        or croak "'script' is not set";
+    $script = File::Spec->rel2abs($script);
+
+    my $php_cgi = $self->php_cgi;
+    $php_cgi ||= which('php-cgi');
+    croak "cannot find 'php-cgi' command" unless -x $php_cgi;
+
+    $self->_app(wrap_php($php_cgi,$script));
 }
 
 sub call {
