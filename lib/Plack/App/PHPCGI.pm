@@ -10,7 +10,7 @@ use File::Spec;
 use Carp;
 use POSIX ":sys_wait_h";
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 sub wrap_php {
     my ($php_cgi, $script) = @_;
