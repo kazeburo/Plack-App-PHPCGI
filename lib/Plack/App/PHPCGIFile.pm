@@ -43,8 +43,8 @@ Plack::App::PHPCGIFile - serve PHP and static files from a directory
   use Plack::App::PHPCGIFile;
 
   my $app = Plack::App::PHPCGIFile->new(
-      script => '/path/to/htdocs'
-  );
+      root => '/path/to/htdocs'
+  )->to_psgi;
 
 
 =head1 DESCRIPTION
