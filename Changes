@@ -1,5 +1,7 @@
 Revision history for Perl extension Plack::App::PHPCGI
 
+{{$NEXT}}
+
 0.03    Mon Jan 7 23:18:56 2013
         - fixed SYNOPSIS of Plack::App::PHPCGIFile
 

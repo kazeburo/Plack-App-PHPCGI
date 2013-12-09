@@ -9,6 +9,8 @@ use File::Which;
 use File::Spec;
 use Carp;
 
+our $VERSION = '0.03';
+
 sub prepare_app {
     my $self = shift;
     my $php_cgi = $self->php_cgi;
