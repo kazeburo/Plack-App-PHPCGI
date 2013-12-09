@@ -4,7 +4,7 @@ requires 'File::Which';
 requires 'Plack', '1.0013';
 requires 'parent';
 
-on build => sub {
-    requires 'ExtUtils::MakeMaker', '6.36';
+on test => sub {
     requires 'Test::More';
 };
+
