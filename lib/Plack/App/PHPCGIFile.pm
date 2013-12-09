@@ -9,7 +9,7 @@ use File::Which;
 use File::Spec;
 use Carp;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 sub prepare_app {
     my $self = shift;

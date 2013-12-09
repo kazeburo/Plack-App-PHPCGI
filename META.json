@@ -26,12 +26,6 @@
       ]
    },
    "prereqs" : {
-      "build" : {
-         "requires" : {
-            "ExtUtils::MakeMaker" : "6.36",
-            "Test::More" : "0"
-         }
-      },
       "configure" : {
          "requires" : {
             "CPAN::Meta" : "0",
@@ -55,6 +49,11 @@
             "Plack" : "1.0013",
             "parent" : "0"
          }
+      },
+      "test" : {
+         "requires" : {
+            "Test::More" : "0"
+         }
       }
    },
    "release_status" : "unstable",
@@ -69,7 +68,7 @@
          "web" : "https://github.com/kazeburo/Plack-App-PHPCGI"
       }
    },
-   "version" : "0.03",
+   "version" : "0.04",
    "x_contributors" : [
       "Masahiro Nagano <kazeburo@gmail.com>"
    ]

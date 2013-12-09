@@ -2,6 +2,11 @@ Revision history for Perl extension Plack::App::PHPCGI
 
 {{$NEXT}}
 
+0.04 2013-12-09T00:46:57Z
+
+        - re-packaging with Minilla
+        - add version to Plack::App::PHPCGIFile RT#91240
+
 0.03    Mon Jan 7 23:18:56 2013
         - fixed SYNOPSIS of Plack::App::PHPCGIFile
 
