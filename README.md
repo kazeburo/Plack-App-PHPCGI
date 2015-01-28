@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/kazeburo/Plack-App-PHPCGI.svg?branch=master)](https://travis-ci.org/kazeburo/Plack-App-PHPCGI)
 # NAME
 
 Plack::App::PHPCGI - execute PHP script as CGI

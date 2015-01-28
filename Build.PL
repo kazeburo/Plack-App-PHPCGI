@@ -13,6 +13,10 @@ use Module::Build;
 use File::Basename;
 use File::Spec;
 
+use Devel::CheckBin;
+
+check_bin('php-cgi');
+
 my %args = (
     license              => 'perl',
     dynamic_config       => 0,
