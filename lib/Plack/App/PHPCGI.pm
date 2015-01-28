@@ -59,9 +59,9 @@ sub wrap_php {
         
         my $res = '';
         while (waitpid($pid, WNOHANG) <= 0) {
-            $res .= do { local $/; <$stdoutr> };
+            $res .= do { local $/; my $str = <$stdoutr>; defined $str ? $str : '' };
         }
-        $res .= do { local $/; <$stdoutr> };
+        $res .= do { local $/; my $str = <$stdoutr>; defined $str ? $str : '' };
         
         if (POSIX::WIFEXITED($?)) {
             return CGI::Parse::PSGI::parse_cgi_output(\$res);
