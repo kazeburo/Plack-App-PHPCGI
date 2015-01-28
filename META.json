@@ -68,7 +68,7 @@
          "web" : "https://github.com/kazeburo/Plack-App-PHPCGI"
       }
    },
-   "version" : "0.04",
+   "version" : "0.05",
    "x_contributors" : [
       "Karen Etheridge <ether@cpan.org>",
       "Masahiro Nagano <kazeburo@gmail.com>"
