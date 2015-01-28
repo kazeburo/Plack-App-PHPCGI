@@ -39,7 +39,7 @@ Masahiro Nagano <kazeburo {at} gmail.com>
 
 # SEE ALSO
 
-[Plack::App::WrapCGI](http://search.cpan.org/perldoc?Plack::App::WrapCGI)
+[Plack::App::WrapCGI](https://metacpan.org/pod/Plack::App::WrapCGI)
 
 # LICENSE
 
